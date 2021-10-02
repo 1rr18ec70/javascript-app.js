@@ -1,15 +1,11 @@
+  var list= document.querySelector('ul')
+ 
+  var arr=['go to college','have some knowledge','and be skilled person']
 
-var heading = document.getElementById('heading')
-var body = document.querySelector('body')
-
-console.log(heading)
-
-heading.innerHTML="i was added by you "
-heading.style="color:red;font-size:2rem"
-
-heading.classList.add('five')
-heading.classList.remove('two')
-body.classList.add('dark')
-
-console.log(heading.classList)
-
+for (var i=0;i<arr.length;i++){
+  var element= document.createElement('li')
+  var textnode=document.createTextNode(arr[i])
+  console.log(element)
+element.appendChild(textnode)
+console.log(element)
+}
